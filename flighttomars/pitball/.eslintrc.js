@@ -29,14 +29,6 @@ module.exports = {
     'default-param-last': 'warn',
     'eol-last': ['warn', 'always'],
     eqeqeq: ['error', 'always'],
-    indent: [
-      'warn',
-      'tab',
-      {
-        MemberExpression: 'off',
-        SwitchCase: 1,
-      },
-    ],
     'linebreak-style': ['warn', 'windows'],
     'max-classes-per-file': ['warn', 1],
     'max-len': ['error', 120],
@@ -70,7 +62,6 @@ module.exports = {
         },
       },
     ],
-
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
@@ -79,4 +70,4 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': ['warn', { args: 'none' }],
     '@typescript-eslint/unbound-method': 'error',
   },
-}
+};
