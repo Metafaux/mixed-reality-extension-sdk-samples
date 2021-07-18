@@ -1,0 +1,6 @@
+{
+  "name": "Ball for Ball Pit",
+  "author": "Alexander D. Wilson",
+  "license": "MIT",
+  "optionalPermissions": ["user-interaction"]
+}

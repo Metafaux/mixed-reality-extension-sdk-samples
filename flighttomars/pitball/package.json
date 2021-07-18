@@ -1,0 +1,40 @@
+{
+  "name": "pitball",
+  "version": "0.1.0",
+  "description": "ball for VR ball pit",
+  "main": "built/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "tsc --build --clean",
+    "build": "tsc --build && eslint --ext .ts src",
+    "build-only": "tsc --build",
+    "build-watch": "tsc --build --watch --preserveWatchOutput",
+    "lint": "eslint --ext .ts src",
+    "start": "node .",
+    "start-watch": "nodemon --nolazy --inspect .",
+    "debug": "node --nolazy --inspect=9229 .",
+    "debug-watch": "npm run build-only && concurrently \"npm run build-watch\" \"nodemon --nolazy --inspect=9229 .\""
+  },
+  "keywords": [
+    "vr",
+    "altspace",
+    "mre",
+    "brcvr"
+  ],
+  "author": "Alexander D. Wilson",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^16.3.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "concurrently": "^6.2.0",
+    "eslint": "^7.31.0",
+    "nodemon": "^2.0.12",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@microsoft/mixed-reality-extension-sdk": "^0.20.0",
+    "dotenv": "^10.0.0"
+  }
+}
